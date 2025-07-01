@@ -1,0 +1,47 @@
+{
+  "name": "issuebadge",
+  "displayName": "Issue Badge",
+  "description": "Manage and send IssueBadge badges from VS Code",
+  "version": "0.0.1",
+  "engines": {
+    "vscode": "^1.60.0"
+  },
+  "activationEvents": [
+    "onCommand:issueBadge.setApiKey",
+    "onCommand:issueBadge.getBadges",
+    "onCommand:issueBadge.sendBadge"
+  ],
+  "main": "./out/extension.js",
+  "contributes": {
+    "commands": [
+      {
+        "command": "issueBadge.setApiKey",
+        "title": "IssueBadge: Set API Key"
+      },
+      {
+        "command": "issueBadge.getBadges",
+        "title": "IssueBadge: Refresh Badges"
+      },
+      {
+        "command": "issueBadge.sendBadge",
+        "title": "IssueBadge: Send Badge"
+      }
+    ]
+  },
+  "scripts": {
+    "vscode:prepublish": "npm run compile",
+    "compile": "tsc -p ./",
+    "watch": "tsc -watch -p ./"
+  },
+  "dependencies": {
+    "node-fetch": "^2.7.0",
+    "uuid": "^9.0.1"
+  },
+  "devDependencies": {
+    "@types/node": "^16.x",
+    "@types/node-fetch": "^2.6.12",
+    "@types/uuid": "^9.0.8",
+    "typescript": "^4.x",
+    "vscode": "^1.1.37"
+  }
+}
