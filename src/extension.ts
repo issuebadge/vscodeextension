@@ -103,7 +103,7 @@ async function sendBadge(ctx: vscode.ExtensionContext) {
     idempotency_key: uuidv4()
   };
 
-  const resp = await fetch(`${BASE}/badge/send`, {
+  const resp = await fetch(`${BASE}/issue/create`, {
     method: 'POST',
     headers: {
       Authorization: `Bearer ${key}`,

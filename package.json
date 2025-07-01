@@ -1,8 +1,9 @@
 {
   "name": "issuebadge",
   "displayName": "Issue Badge",
-  "description": "Manage and send IssueBadge badges from VS Code",
-  "version": "0.0.1",
+  "description": "Issue Certificate of Appreciate/Badge to your developer right from vscode using issueBadge",
+  "publisher": "issuebadge",
+  "version": "0.0.2",
   "engines": {
     "vscode": "^1.60.0"
   },
@@ -37,6 +38,14 @@
     "node-fetch": "^2.7.0",
     "uuid": "^9.0.1"
   },
+  "repository": {
+  "type": "git",
+  "url": "https://github.com/issuebadge/vscodeextension.git"
+},
+"icon": "images/icon.png",
+
+"license": "MIT",
+
   "devDependencies": {
     "@types/node": "^16.x",
     "@types/node-fetch": "^2.6.12",
